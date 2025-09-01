@@ -29,8 +29,8 @@ Aplicação desenvolvida em React + Vite que permite buscar filmes, visualizar d
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/filmes-react.git
-cd filmes-react
+git clone https://github.com/Patriciapaes88/Projeto-Filme.git
+cd Projeto-Filme
 
 # Instale as dependências
 npm install
