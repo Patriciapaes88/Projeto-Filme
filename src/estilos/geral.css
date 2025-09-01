@@ -1,0 +1,205 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f0f0f0;
+}
+
+/* Título principal */
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffcc00;
+  text-shadow: 2px 2px #000;
+  margin-top: 2rem;
+}
+
+/* Formulário de busca */
+form {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #b00610;
+  transform: scale(1.05);
+}
+
+/* Botão de voltar */
+.botao-voltar {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff5050;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #e60000;
+}
+
+/* Container dos filmes */
+.container-filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* Cartão de filme */
+.cartao-filme {
+  background-color: #4b1c2e; /* vinho fechado */
+  color: #f8f8f8;
+  border: 1px solid #ddd;
+
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+  padding: 1rem;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+}
+
+
+.cartao-filme:hover {
+ transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.cartao-filme h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  width: 100%;
+  color: #fff;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.cartao-filme p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.cartao-filme img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Paginação */
+.paginacao button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paginacao button:hover {
+  background-color: #555;
+}
+
+/* Ações do filme (botões) */
+.acoes-filme {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+.acoes-filme button {
+  font-size: 0.8rem;
+  padding: 0.4rem;
+}
+
+
+.acoes-filme button:hover {
+  background-color: #b00610;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+      h2 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  input[type="text"] {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  button {
+    width: 90%;
+    max-width: 150px;
+  }
+
+  .container-filmes {
+    grid-template-columns: 1fr;
+  }
+
+  .acoes-filme {
+    flex-direction: column;
+  }
+
+  .acoes-filme button {
+    width: 100%;
+  }
+
+}
+
